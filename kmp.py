@@ -3,7 +3,7 @@ def computeLPS(p,p_len,lps):
     i=1
     while(i<p_len):
         if p[i]==p[length]:
-            length+1
+            length+=1
             lps[i]=length
             i+=1
         else:
