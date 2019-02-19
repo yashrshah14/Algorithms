@@ -1,0 +1,10 @@
+nums=[12,34,5,54,66,79,0,1,45]
+left, right=0, len(nums)-1
+while(left<right):
+    while(nums[left]%2==1 and left<right):
+        left+=1
+    while(nums[right]%2==0 and left<right):
+        right-=1
+    if left<right:
+        nums[left], nums[right]=nums[right],nums[left]
+print(nums)
