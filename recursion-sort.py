@@ -4,3 +4,5 @@ def sortA(A):
     return A[0]<=A[1] and sortA(A[1:])
 A=[1,2,3,4,5]
 print(sortA(A))
+A=[5,4,2,3,1]
+print(sortA(A))
